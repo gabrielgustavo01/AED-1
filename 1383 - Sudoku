@@ -1,3 +1,7 @@
+// Nome: Gabriel Gustavo Pinto Ra:163.730
+//Turma AED 1 - Noturno
+
+
 #include <stdio.h>
 
 int verificacao(int mat[9][9]) {
