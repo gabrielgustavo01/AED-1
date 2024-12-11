@@ -15,7 +15,7 @@ void ordenacaoInsercao(int arr[], int n) {
 }
 
 int main() {
-    for (int tamanho = 50000; tamanho <= 400000; tamanho += 50000) {
+    for (int tamanho = 0; tamanho <= 400000; tamanho += 20000) {
         int *arr = malloc(tamanho * sizeof(int));
         for (int i = 0; i < tamanho; i++) {
             arr[i] = rand() % tamanho;
