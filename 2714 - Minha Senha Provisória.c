@@ -6,17 +6,15 @@ int main() {
     int N;
     scanf("%d", &N);
 
-    char ra[101]; // Permitindo até 100 caracteres + '\0'
+    char ra[101];
     for (int i = 0; i < N; i++) {
         scanf("%s", ra);
 
-        // Verifica se a string começa com "RA" e tem 20 caracteres
         if (strncmp(ra, "RA", 2) != 0 || strlen(ra) != 20) {
             printf("INVALID DATA\n");
             continue;
         }
 
-        // Verifica se os 18 caracteres seguintes são todos dígitos
         int valido = 1;
         for (int j = 2; j < 20; j++) {
             if (!isdigit(ra[j])) {
